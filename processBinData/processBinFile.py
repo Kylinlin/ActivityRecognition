@@ -69,7 +69,7 @@ map_for_individual = {
 def processDir(dirName, experiment_date, hasPhoneTag = False):
 
     brand_of_watch = 'huami'            # 手表品牌
-    top_level_dir = os.path.join('../dataset', 'dataExtFromBin')              # 一级目录
+    top_level_dir = os.path.join('../dataset', 'dataPrepared')              # 一级目录
     csv_format = True                  # 测试时使用csv格式，如果需要xlsx格式，就设置为False
     log_file= 'process.log'             # 日志文件
 

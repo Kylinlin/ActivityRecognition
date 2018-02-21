@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import pandas as pd
 import time
@@ -37,7 +38,7 @@ def extract_file_path(top_dir, time):
 
 def process_single_file(record_file, brand, experiment_date):
     # 将含有切割点数据的文件读入后切割数据
-    negative_sample_dir = 'dataset\\data\\negativeSamples'
+    negative_sample_dir = '../dataSet/dataPrepared/negativeSamples'
     sucess_count = 0
     log_file_name = 'process.log'
     log_file = open(log_file_name, 'a+')         # 把操作记录添加到日志文件中
@@ -55,51 +56,64 @@ def process_single_file(record_file, brand, experiment_date):
 
 
     log_file.write('\n记录时间：{}\n'.format(time.strftime('%Y-%m-%d', time.localtime(time.time()))))
-    log_file.write('  文件:{} 下有记录:{} 条\n'.format(record_file, len(open(record_file, 'r').readlines())))
-    for line in open(record_file, 'r'):
+    totalcount = 0
+    for line in open(record_file, mode='r',encoding='utf-8'):
         try:
             if line == ' ':
                 continue
             if line.startswith('#'):
                 continue
+            totalcount += 1
             record = line.strip()
             messages_list = record.split(' ')
             file_path = messages_list[0]
             split_point_head = int(messages_list[1])
             split_point_discard = int(messages_list[2])
             split_point_tail = int(messages_list[3])
-            person_name = file_path.split('.')[0].split('\\')[-1]
+            person_name = file_path.split('.')[2].split('/')[-1]
 
-            ori_pd = pd.read_excel(file_path)
+            ori_pd = pd.read_csv(file_path)
             negative_sample_head = ori_pd.iloc[0:split_point_head,:]
             negative_sample_tail = ori_pd.iloc[split_point_tail:,:]
             save_sample = ori_pd.iloc[split_point_discard:split_point_tail,:]
 
-            negative_sample_head_filename = person_name + '_head.xlsx'
-            negative_sample_tail_filename = person_name + '_tail.xlsx'
+            negative_sample_head_filename = person_name + '_head.csv'
+            negative_sample_tail_filename = person_name + '_tail.csv'
 
-            save_sample_filename = os.path.join(os.path.dirname(file_path), person_name + '.xlsx')
+            save_sample_filename = os.path.join(os.path.dirname(file_path), person_name + '.csv')
 
             os.remove(file_path) # 删除原来的文件
 
-            negative_sample_head.to_excel(os.path.join(negative_sample_dir,negative_sample_head_filename), index=False, header=True)
-            negative_sample_tail.to_excel(os.path.join(negative_sample_dir,negative_sample_tail_filename), index=False, header=True)
-            save_sample.to_excel(save_sample_filename, index=False, header=True)
+            negative_sample_head.to_csv(os.path.join(negative_sample_dir,negative_sample_head_filename), index=False, header=True)
+            negative_sample_tail.to_csv(os.path.join(negative_sample_dir,negative_sample_tail_filename), index=False, header=True)
+            save_sample.to_csv(save_sample_filename, index=False, header=True)
             sucess_count += 1
             print('成功处理文件： {}'.format(file_path))
         except Exception as e:
-            log_file.write(e + ' ' + file_path + '\n')
+            #log_file.write(e + ' ' + file_path + '\n')
+            print(str(e))
+            log_file.write(str(e) + '\n')
             continue
-    log_file.write('  文件:{} 成功处理记录:{} 条\n'.format(record_file, sucess_count))
+    print('文件:{} 一共有记录:{} 条\n'.format(record_file, totalcount))
+    print('文件:{} 成功处理记录:{} 条\n'.format(record_file, sucess_count))
+    log_file.write('文件:{} 成功处理记录:{} 条\n'.format(record_file, sucess_count))
 
 
 
 if __name__ == '__main__':
     # extract_file_path(os.path.join('dataset', 'data'), '8-7')
 
-    brand = 'huami'
+
     # experiment_date = '20170503'
-    experiment_date = '20170612'
-    record_dir = 'single_record_for_extractNegativesamples';
-    process_single_file( os.path.join(record_dir,'left_output_8-7.txt'), brand, experiment_date)
-    process_single_file( os.path.join(record_dir,'right_output_8-7.txt'), brand, experiment_date)
+    #experiment_date = '20170612'
+    #record_dir = 'single_record_for_extractNegativesamples'
+    #process_single_file( os.path.join(record_dir,'left_output_8-7.txt'), brand, experiment_date)
+    #process_single_file( os.path.join(record_dir,'right_output_8-7.txt'), brand, experiment_date)
+
+    brand = 'huami'
+    record_dir = 'all_records_for_extractNegativesamples'
+    process_single_file(os.path.join(record_dir, 'left_5.3.txt'), brand, '20170503')
+    process_single_file(os.path.join(record_dir, 'left_6.12.txt'), brand, '20170612')
+    process_single_file(os.path.join(record_dir, 'right_5.3.txt'), brand, '20170503')
+    process_single_file(os.path.join(record_dir, 'right_6.12.txt'), brand, '20170612')
+
