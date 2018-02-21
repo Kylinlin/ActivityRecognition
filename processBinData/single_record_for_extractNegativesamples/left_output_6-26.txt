@@ -1,0 +1,4 @@
+data\fastRun\huami_left_20170503\ZhaoRan_20170602103014.xlsx 6095 6391 8092
+data\playPhone\huami_left_20170503\ZhaoRan_20170531202306.xlsx 195 464 13886
+data\slowRun\huami_left_20170503\ZhaoRan_20170531205818.xlsx 151 274 6775
+data\umbrella\huami_left_20170503\ZhaoRan_20170531195706.xlsx 273 662 13501

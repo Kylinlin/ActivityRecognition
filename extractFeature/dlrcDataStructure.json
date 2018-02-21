@@ -1,0 +1,689 @@
+{
+	"fastRun": {
+    "class": "run",
+    "expriments": [
+      {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  },
+  "negativeSamples": {
+    "class": "idle",
+    "expriments": [
+      {
+        "name": "moto_left_201601",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "gyro": [
+          4,
+          5,
+          6
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "moto_left_201602",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "grav": [
+          4,
+          5,
+          6
+        ],
+        "gyro": [
+          7,
+          8,
+          9
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+	  {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+	  {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }	  
+    ]
+  },
+  "brushTeeth": {
+    "class": "idle",
+    "expriments": [
+      {
+        "name": "moto_left_20160302",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "grav": [
+          4,
+          5,
+          6
+        ],
+        "gyro": [
+          7,
+          8,
+          9
+        ],
+        "descriptions": "collected by ZhaoRan; head and tail part of data is idle state"
+      },
+      {
+        "name": "moto_left_20160303",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "undefined":[4,5,6,7,8,9,10,11,12,13,14],
+        "descriptions": "columns [4:14] undefined; collected by ZhaoRan; head tail part of data is idle state"
+      }
+    ]
+  },
+  "washFace": {
+    "class": "idle",
+    "expriments": [
+      {
+        "name": "moto_left_20160302",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "grav": [
+          4,
+          5,
+          6
+        ],
+        "gyro": [
+          7,
+          8,
+          9
+        ],
+        "descriptions": "collected by ZhaoRan; include idle state"
+      },
+      {
+        "name": "moto_left_20160303",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "undefined":[4,5,6,7,8,9,10,11,12,13,14],
+        "descriptions": "collected by ZhaoRan; include idle state"
+      }
+    ]
+  },
+  "idle": {
+    "class": "idle",
+    "expriments": [
+      {
+        "name": "moto_left_201601",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "gyro": [
+          4,
+          5,
+          6
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "moto_left_201602",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "grav": [
+          4,
+          5,
+          6
+        ],
+        "gyro": [
+          7,
+          8,
+          9
+        ],
+        "descriptions": "collected by ZhaoRan"
+      }
+    ]
+  },
+  "slowRun": {
+    "class": "run",
+    "expriments": [
+      {
+        "name": "moto_left_201512",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "gyro": [
+          4,
+          5,
+          6
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  },
+  "watchTime": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201512",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "gyro": [
+          4,
+          5,
+          6
+        ],
+        "descriptions": "collected by ZhaoRan"
+      }
+    ]
+  },
+  "playPhone": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201601",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "gyro": [
+          4,
+          5,
+          6
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  },
+  "coatPocket": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201601",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "gyro": [
+          4,
+          5,
+          6
+        ],
+        "descriptions": "collected by ZhaoRan"
+      }
+    ]
+  },
+  "heavybag": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201701",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "timestamp": [
+          1
+        ],
+        "acce": [
+          2,
+          3,
+          4
+        ],
+        "gyro": [
+          5,
+          6,
+          7
+        ],
+        "descriptions": "collected by ZhangTao"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  },
+  "knapsack": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201701",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "timestamp": [
+          1
+        ],
+        "acce": [
+          2,
+          3,
+          4
+        ],
+        "gyro": [
+          5,
+          6,
+          7
+        ],
+        "descriptions": "collected by ZhangTao"
+      }
+    ]
+  },
+  "phonecall": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201701",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "timestamp": [
+          1
+        ],
+        "acce": [
+          2,
+          3,
+          4
+        ],
+        "gyro": [
+          5,
+          6,
+          7
+        ],
+        "descriptions": "collected by ZhangTao"
+      },
+      {
+        "name": "moto_left_201603",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "grav": [
+          4,
+          5,
+          6
+        ],
+        "gyro": [
+          7,
+          8,
+          9
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  },
+  "umbrella": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201701",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "timestamp": [
+          1
+        ],
+        "acce": [
+          2,
+          3,
+          4
+        ],
+        "gyro": [
+          5,
+          6,
+          7
+        ],
+        "descriptions": "collected by ZhangTao"
+      },
+      {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true,
+        "descriptions": "collected by ZhangTao"
+      },
+      {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true,
+        "descriptions": "collected by ZhangTao"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  },
+  "upstairs": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201702",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "timestamp" : [1],
+        "acce": [
+          2,
+          3,
+          4
+        ],
+        "descriptions": "collected by ZhangTao"
+      }
+    ]
+  },
+  "downstairs": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_201702",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "timestamp" : [1],
+        "acce": [
+          2,
+          3,
+          4
+        ],
+        "descriptions": "collected by ZhangTao"
+      }
+    ]
+  },
+  
+  "swing": {
+    "class": "swing",
+    "expriments": [
+      {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  },
+  "trousersPocket": {
+    "class": "body",
+    "expriments": [
+      {
+        "name": "moto_left_20160202",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "gyro": [
+          4,
+          5,
+          6
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "moto_left_20160224",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": false,
+        "acce": [
+          1,
+          2,
+          3
+        ],
+        "grav": [
+          4,
+          5,
+          6
+        ],
+        "gyro": [
+          7,
+          8,
+          9
+        ],
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170503",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_right_20170503",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true,
+        "descriptions": "collected by ZhaoRan"
+      },
+      {
+        "name": "huami_left_20170612",
+        "sampleRate": 50,
+        "hand": "left",
+        "hasHead": true
+      },
+    {
+        "name": "huami_right_20170612",
+        "sampleRate": 50,
+        "hand": "right",
+        "hasHead": true
+      }
+    ]
+  }
+}
