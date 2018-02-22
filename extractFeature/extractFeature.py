@@ -1,11 +1,11 @@
 import pandas as pd
 import os
 
-from DecisionTree.extractFeature.getCharacteristics import getCharateristics
-from DecisionTree.extractFeature.parseJson import parse_json
+from utils.getCharacteristics import getCharateristics
+from utils.parseJson import parse_json
 
-features_dir = os.path.join(os.path.pardir,'jupyterNotebook')
-data_dir = os.path.abspath('D:\ActivityRecognition\DataSet')
+features_dir = os.path.join(os.path.pardir, os.path.join('jupyterNotebook', 'dataset'))
+data_dir = os.path.abspath('D:\Repository\ActivityRecognition\dataSet\dataPrepared')
 log_file = open('process.log', 'a+')
 
 individuals = [
@@ -72,9 +72,9 @@ def extract_feature(map_list):
                 file_full_path = os.path.join(dirname, file)
                 print('正在处理文件：' + os.path.join(dirname, file))
                 if hasHead == False:
-                    ori_df = pd.read_excel(os.path.join(dirname, file), names=header)
+                    ori_df = pd.read_csv(os.path.join(dirname, file), names=header)
                 else:
-                    ori_df = pd.read_excel(os.path.join(dirname, file))
+                    ori_df = pd.read_csv(os.path.join(dirname, file))
 
                 individual_name = file.split('_')[0]
                 tmp_df = extract_feature_from_dataframe(ori_df, sample_gap, sample_len, label, winlen, fs, file_full_path, individual_name)

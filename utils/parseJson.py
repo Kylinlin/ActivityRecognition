@@ -1,8 +1,6 @@
 import json
 import os
-
-
-data_dir = os.path.abspath('D:\ActivityRecognition\DataSet')
+data_dir = os.path.abspath('D:\Repository\ActivityRecognition\dataSet\dataPrepared')
 
 map_for_class = {
     'idle'        : 0,
